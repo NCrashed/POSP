@@ -1,0 +1,16 @@
+name:           POSP-traffic
+version:        0.1
+cabal-version:  >=1.2
+build-type:     Simple
+author:         ncrashed
+
+executable POSP-traffic
+  hs-source-dirs:  src
+  main-is:         Main.hs
+  build-depends:   
+                   base >= 4,
+                   netwire >= 5.0.0,
+                   random >=1.0.1 && <1.1,
+                   dequeue >=0.1.5 && <0.2
+  ghc-options:     -Wall -rtsopts
+
